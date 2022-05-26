@@ -13,15 +13,17 @@ class TrainsTableSeeder extends Seeder
      */
     public function run()
     {
+        $currentDate = date("Y-m-d");
+
         $train = new Train();
 
-        $train->agency = 'Trenitalia';
-        $train->departure_station = 'Roma Termini';
-        $train->arrival_station = 'Milano Centrale';
-        $train->departure_day = 2022 - 05 - 26;
-        $train->departure_time = '16:30';
-        $train->arrival_time = '18:30';
-        $train->train_code = 15678;
+        $train->agency = 'Italo';
+        $train->departure_station = 'Padova Centrale';
+        $train->arrival_station = 'Roma Tiburtina';
+        $train->departure_day = '2022-05-29';
+        $train->departure_time = '15:00';
+        $train->arrival_time = '19:00';
+        $train->train_code = 18495;
         $train->train_carriage_number = 7;
         $train->on_time = true;
         $train->deleted = false;
