@@ -20,7 +20,11 @@ class TrainsTableSeeder extends Seeder
         $train->agency = 'Italo';
         $train->departure_station = 'Padova Centrale';
         $train->arrival_station = 'Roma Tiburtina';
+<<<<<<< HEAD
         $train->departure_day = $currentDate;
+=======
+        $train->departure_day = '2022-05-29';
+>>>>>>> c48296683fbc92e117f0aa1f34ee42a5f4ec4272
         $train->departure_time = '15:00';
         $train->arrival_time = '19:00';
         $train->train_code = 18495;
